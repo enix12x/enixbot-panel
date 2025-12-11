@@ -1,0 +1,6 @@
+{
+    "apiUrl": "http://localhost:3000",
+    "apiSecret": "change-this-to-a-random-secret-string",
+    "port": 3001
+}
+
