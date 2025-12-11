@@ -1,0 +1,20 @@
+[Unit]
+Description=enixBot Panel
+Wants=EmojiBot.service
+
+After=network.target
+
+[Service]
+User=collabvm
+Group=collabvm
+Type=simple
+
+WorkingDirectory=/srv/collabvm/bots/enixBot-Panel/
+ExecStart=/bin/node dist/server.js
+
+Restart=always
+RestartSec=10
+
+[Install]
+WantedBy=multi-user.target
+
